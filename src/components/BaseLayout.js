@@ -1,31 +1,31 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 export default class BaseLayout extends Component {
   render() {
     return (
 
       <body>
-      <div className="container">
-             <div className="row justify-content-center">
-             <nav>
-             <ul className ="list-inline ">
-      <li>
-        <NavLink  activeClassName="selected" to="/">Home </NavLink>
-      </li>
-      <li>
-        <NavLink  activeClassName="selected" to="/products"> Products</NavLink>
-      </li>
-      <li>
-        <NavLink  activeClassName="selected" to="/about"> About</NavLink>
-      </li>
-      <li>
-        <NavLink  activeClassName="selected" to="/Contact"> Contact</NavLink>
-      </li>
-            </ul>
-            </nav>
-    </div>
-    </div>
+
+      <Navbar inverse collapseOnSelect>
+      <Navbar.Header>
+      <Navbar.Brand>
+      <a href="#">E-Commerce</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+      <Nav>
+        <NavItem eventKey={1} href="#"><a href="#"><NavLink  activeClassName="selected" to="/">Home </NavLink></a></NavItem>
+        <NavItem eventKey={2} href="#"><a href="#"><NavLink  activeClassName="selected" to="/products"> Products</NavLink></a></NavItem>
+        <NavItem eventKey={2} href="#"><a href="#"><NavLink  activeClassName="selected" to="/about"> About</NavLink></a></NavItem>
+        <NavItem eventKey={2} href="#"><a href="#"><NavLink  activeClassName="selected" to="/Contact"> Contact</NavLink></a></NavItem>
+
+      </Nav>
+      <Nav pullRight>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
         {this.props.children}
 
       </body>
