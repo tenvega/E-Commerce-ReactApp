@@ -10,6 +10,8 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import BaseLayout from './components/BaseLayout';
 import Products from './components/Products';
 import Synthesizers from './components/Synthesizers';
+import DrumMachines from './components/DrumMachines';
+import Modular from './components/Modular';
 import About from './components/About';
 import Contact from './components/Contact';
 import App from './components/App'
@@ -20,6 +22,8 @@ ReactDOM.render(
         <Switch>
           <Route path="/products" component={Products} />
           <Route path="/synthesizers" component={Synthesizers} />
+          <Route path="/drummachines" component={DrumMachines} />
+          <Route path="/modular" component={Modular} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>
           <Route exact="/home" component={App}/>

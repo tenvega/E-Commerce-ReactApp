@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Panel} from 'react-bootstrap'
 export default class BaseLayout extends Component {
   render() {
     return (
@@ -10,7 +10,7 @@ export default class BaseLayout extends Component {
       <Navbar inverse collapseOnSelect>
       <Navbar.Header>
       <Navbar.Brand>
-      <a href="#">E-Commerce</a>
+      <a href="#">Gear Box</a>
       </Navbar.Brand>
       <Navbar.Toggle />
       </Navbar.Header>
