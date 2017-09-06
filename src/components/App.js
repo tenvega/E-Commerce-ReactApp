@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {PageHeader} from 'react-bootstrap'
 import '../styles/App.css';
 
 class App extends Component {
@@ -6,8 +7,7 @@ class App extends Component {
     return (
       <div className="App">
 
-
-          <h2>Welcome to Gear Box</h2>
+  <PageHeader>Gear Box</PageHeader>
 
 
       </div>

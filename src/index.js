@@ -9,6 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import BaseLayout from './components/BaseLayout';
 import Products from './components/Products';
+import Synthesizers from './components/Synthesizers';
 import About from './components/About';
 import Contact from './components/Contact';
 import App from './components/App'
@@ -18,6 +19,7 @@ ReactDOM.render(
       <BaseLayout>
         <Switch>
           <Route path="/products" component={Products} />
+          <Route path="/synthesizers" component={Synthesizers} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>
           <Route exact="/home" component={App}/>
